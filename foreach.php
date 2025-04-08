@@ -15,6 +15,11 @@
     foreach ($user_name as $user_name) {
     echo $user_name . '<br>';
     }
+    
+    // 配列$user_nameのインデックスと値を一つずつ順番に出力する
+    foreach ($user_name as $index => $value) {
+      echo "{$index} : {$value} <br>";
+    }
     ?>
     </p>
     <p>
@@ -24,6 +29,7 @@
       // 連想配列$personal_dataのキーと値を一つずつ順番に出力する
       foreach ($personal_data as $key => $value) {
         echo "{$key} は{$value}です。<br>";
+        
       }
 
       // 連想配列$personal_dataの値を一つずつ順番に出力する
