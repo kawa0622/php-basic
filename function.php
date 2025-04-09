@@ -29,6 +29,19 @@
        say_good_evening();
        ?>
    </p>
+   <p>
+    <?php
+    //与えられた引数$priceに送料を加算し、その値を出力する関数を定義する
+    function calculate_total($price) {
+        $total = $price + 500;
+
+        echo $total . '円<br>';
+    }
+
+    //関数を呼び出し、引数として購入金額を渡す  
+    calculate_total(1200);
+    ?>
+   </p>
 </body>
 
 </html>
