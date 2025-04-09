@@ -52,6 +52,17 @@
     add_two_arguments(1200,500);
     ?>
    </p>
+   <p>
+    <?php
+    //与えられた引数$numを2倍にし、その値を戻り値として返す関数を定義する
+    function double($num) {
+        return $num * 2;
+    }
+
+    //関数の戻り値を出力する
+    echo double(30);
+    ?>
+    </p>
 </body>
 
 </html>
