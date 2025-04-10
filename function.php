@@ -1,3 +1,7 @@
+<?php
+//型宣言と異なるデータ型の場合にエラーを発生させる
+declare(strict_types=1);
+?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -70,7 +74,7 @@
             return $num * 2;
         }
 
-        //型宣言と異なるデータ型の引数を渡す（引数が強制的に整数型に変換される）
+        //型宣言と異なるデータ型の引数を渡す（PHPファイルの先頭にdeclare(strict_types=1);を記述しているのでエラーが発生する）
         echo type_hinting_argument(1.618); 
         ?>
         </p>
