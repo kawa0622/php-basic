@@ -89,6 +89,21 @@ declare(strict_types=1);
         echo type_hinting_return_value(1); 
         ?>
         </p>
+        <?php
+function greet_user(string $user_name): string {
+    if (trim($user_name) === "") {
+        return "こんにちは、ゲストさん！";
+    } else {
+        return "こんにちは、{$user_name}さん！";
+    }
+}
+
+// 実行結果
+echo greet_user("侍 太郎") . "\n";  // こんにちは、侍 太郎さん！
+echo greet_user("") . "\n";         // こんにちは、ゲストさん！
+?>
+
+
 </body>
 
 </html>
