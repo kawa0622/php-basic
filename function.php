@@ -74,8 +74,19 @@ declare(strict_types=1);
             return $num * 2;
         }
 
-        //型宣言と異なるデータ型の引数を渡す（PHPファイルの先頭にdeclare(strict_types=1);を記述しているのでエラーが発生する）
-        echo type_hinting_argument(1.618); 
+        //型宣言と同じデータ型の因数を渡す
+        echo type_hinting_argument(1); 
+        ?>
+        </p>
+        <p>
+        <?php
+        //戻り値の型宣言を行い、戻り値を整数型に限定する
+        function type_hinting_return_value($num): int {
+            return $num * 2;
+        }
+
+        //型宣言と異なるデータ型の戻り値を返す（PHPファイルの先頭にdeclare(strict_types=1);を記述しているためエラーになる）
+        echo type_hinting_return_value(1.618); 
         ?>
         </p>
 </body>
