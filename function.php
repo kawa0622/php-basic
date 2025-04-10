@@ -85,8 +85,8 @@ declare(strict_types=1);
             return $num * 2;
         }
 
-        //型宣言と異なるデータ型の戻り値を返す（PHPファイルの先頭にdeclare(strict_types=1);を記述しているためエラーになる）
-        echo type_hinting_return_value(1.618); 
+        //型宣言と同じデータ型の戻り値がかえって来るようにする
+        echo type_hinting_return_value(1); 
         ?>
         </p>
 </body>
