@@ -9,6 +9,9 @@
 <body>
   <p>
     <?php
+    // グローバル変数を定義する
+    $user_name = '侍花子';
+
     function show_user_name() {
       //ローカル変数を定義する
       $user_name = '侍太郎';
@@ -18,6 +21,9 @@
     }
 
     show_user_name();
+
+    // グルーバルスコープの範囲内でグローバル変数を使う
+    echo $user_name;
 
     ?>
     </p>
