@@ -9,15 +9,15 @@
 <body>
    <p>
     <?php
- $user_name = ['侍太郎', '侍一郎', '侍二郎', '侍三郎', '侍四郎'];
+ $user_names = ['侍太郎', '侍一郎', '侍二郎', '侍三郎', '侍四郎'];
 
     // 配列$user_nameの要素を一つずつ順番に出力する
-    foreach ($user_name as $user_name) {
+    foreach ($user_names as $user_name) {
     echo $user_name . '<br>';
     }
     
     // 配列$user_nameのインデックスと値を一つずつ順番に出力する
-    foreach ($user_name as $index => $value) {
+    foreach ($user_names as $index => $value) {
       echo "{$index} : {$value} <br>";
     }
     ?>
